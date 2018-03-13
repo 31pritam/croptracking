@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+</head>
+
+<script src="js\jquery.min.js"></script>
+<script>
+
+
+	$(document).ready(function() {
+		$("#div1").load("Navbar.html");
+	});
+	
+		
+	    function show()
+	    {
+	    	document.getElementById("event").style.display = "visible";
+	    }
+	    
+</script>
+<body style="background-color:orange">
+
+
+<div id='div1'></div>
+
+
+<center>
+
+<div class="container" style="margin-left: 25%; width: 50%; ">
+<form action="Add_crop" method="post">
+    <p class="h4 text-center mb-4">Add Crop</p><hr>
+
+    <!-- Material input text -->
+    <div class="md-form">
+        <i class="fa fa-user prefix grey-text"></i>
+        <input type="text" id="cropID" class="form-control" name="cropID" placeholder="Crop ID" required><br> 
+    </div>
+
+    <div class="md-form">
+        <i class="fa fa-user prefix grey-text"></i>
+        <input type="text" id="cropname" class="form-control" name="cropname" placeholder="Crop Name" required><br> 
+    </div>
+
+    <div class="md-form">
+        <i class="fa fa-user prefix grey-text"></i>
+        <input type="text" id="bestseason" class="form-control" name="bestseason" placeholder="Best Season" required><br> 
+    </div>
+
+    <div class="md-form">
+        <i class="fa fa-user prefix grey-text"></i>
+        <input type="text" id="bestmonth" class="form-control" name="bestmonth" placeholder="Best Month" required><br> 
+        
+    </div>
+
+    <div class="md-form">
+        <i class="fa fa-user prefix grey-text"></i>
+        <input type="text" id="water_req" class="form-control" name="water_req" placeholder="Water Requirement" required><br> 
+       
+    </div>
+
+    <div class="md-form">
+        <i class="fa fa-user prefix grey-text"></i>
+        <input type="text" id="soil" class="form-control" name="soil" placeholder="Soil" required><br> 
+       
+    </div>
+
+    <div class="md-form">
+        <i class="fa fa-user prefix grey-text"></i>
+        <input type="text" id="irrigation" class="form-control" name="irrigation" placeholder="Irrigation" required><br> 
+        
+    </div>
+
+    <div class="md-form">
+        <i class="fa fa-user prefix grey-text"></i>
+        <input type="text" id="avgyeild" class="form-control" name="avgyeild" placeholder="Average Yield" required><br> 
+        
+    </div>
+
+    <div class="md-form">
+        <i class="fa fa-user prefix grey-text"></i>
+        <input type="text" id="temp" class="form-control" name="temp" placeholder="Temperature" required><br> 
+        
+    </div>
+    <div class="text-center mt-4">
+        <button class="btn btn-primary" type="submit" name="Add" value="Add Crop">Add Crop</button>&nbsp
+        
+    </div>
+</form>
+</div>
+</center>
+<!-- Material form register -->
+
+<div class="container" style="margin-left: 25%;margin-bottom: 15%; width: 50%;" id="event">
+<form action='Add_Event' method='post'>
+    <p class="h4 text-center mb-4">Add Crop Event</p><hr>
+
+    <!-- Material input text -->
+    <div class="md-form">
+        <i class="fa fa-user prefix grey-text"></i>
+        <input type="text" id="cropID" class="form-control" name="cropID" placeholder="Crop ID" required><br> 
+    </div>
+    
+    <div class="md-form">
+        <i class="fa fa-user prefix grey-text"></i>
+        <input type="text" id="cropID" class="form-control" name="eventName" placeholder="eventName" required><br> 
+    </div>
+    
+    <div class="md-form">
+        <i class="fa fa-user prefix grey-text"></i>
+        <input type="text" id="cropID" class="form-control" name="no_of_days" placeholder="no_of_days" required><br> 
+    </div>
+    
+    <div class="text-center mt-4">
+        <button class="btn btn-primary" type="submit" name="Add" value="Add Crop">Add Crop Event</button>&nbsp
+    </div>
+</form>    
+</div>
+
+
+</body>
+</html>

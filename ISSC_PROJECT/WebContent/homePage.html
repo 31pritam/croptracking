@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Crop Tracking</title>
+</head>
+
+
+<link rel="stylesheet" href="CSS\css\bootstrap.min.css">
+<script src="js\jquery.min.js"></script>
+<script src="js\bootstrap.min.js"></script>
+
+
+
+<body background="IMAGES\background1.jpg">
+
+	<center>
+		<div>
+			<font color="yellow"><h1>Crop Tracking And Information</h1></font>
+		</div>
+
+		<div id="msg"></div>
+			<div class="container"
+				style="margin-left: 25%; margin-top: 8%; width: 50%;">
+				<form method="post" action="ValidateLogin">
+					<font color="gray">
+						<p class="h4 text-center mb-4">Sign In</p>
+						<hr> <!-- Material input email -->
+						<div class="md-form">
+							<i class="fa fa-envelope prefix grey-text"></i> <input
+								type="text" id="materialFormLoginEmailEx" name="username"
+								placeholder="Enter Username" class="form-control" required>
+							<br>
+						</div> <!-- Material input password -->
+						<div class="md-form">
+							<i class="fa fa-lock prefix grey-text"></i> <input
+								type="password" id="materialFormLoginPasswordEx"
+								placeholder="Enter Password" name="password" size="30"
+								class="form-control" required>
+
+							<p class="font-small blue-text d-flex justify-content-end">
+								 <a href="forget.html" class="blue-text ml-1" style="color:yellow">
+									Forgot Password?</a>&nbsp&nbsp <a href="Register.html"
+									 style="color:orange">Want To Register?</a>
+							</p>
+							<br>
+						</div>
+
+						<div class="md-form">
+							<i class="fa fa-lock prefix grey-text"></i> <label for="farmer">Farmer</label>
+							<input type="radio" name="type" id="farmer" value="farmer"
+								size="30" required> <label for="admin">Admin</label> <input
+								type="radio" name="type" value="admin" id="admin" size="30"
+								required>
+
+						</div>
+
+						<div class="text-center mt-4">
+							<button class="btn btn-default" type="submit">Login</button>
+							<button class="btn btn-default" type="reset">Reset</button>
+						</div>
+					</font>
+				</form>
+			</div>
+		
+	</center>
+
+</body>
+</html>
+
+
+
